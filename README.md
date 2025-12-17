@@ -1,106 +1,146 @@
-# VerDix
+# 🌱 Verdix — AI-Powered Sustainability Intelligence Platform
 
-A sustainability-focused app for product analysis using AI.
+Verdix is a full-stack web application that helps users make informed, sustainable purchasing decisions by analyzing the environmental impact of everyday products.
 
-## Features
+The platform uses AI-based image understanding, real-time processing, and a modern web interface to convert complex sustainability data into clear, actionable insights.
 
-- Scan products for eco-friendliness
-- Get sustainability tips
-- Carbon calculator
-- Alternative product finder
+Verdix is currently built as a **stateless, API-driven full-stack application**, with a clean architecture designed for future scalability.
 
-## Tech Stack
+---
 
-- **Frontend**: React, TypeScript, Vite, Tailwind CSS
-- **Backend**: Node.js, Express, TypeScript, Google Gemini AI
+## ✨ Core Features
 
-## Setup
+### 🔍 AI-Powered Product Analysis
+- Image-based product input
+- AI-driven material and packaging assessment
+- Sustainability scoring across:
+  - Packaging impact
+  - Production considerations
+  - Lifecycle footprint
+- Human-readable explanations (pros & cons)
+
+---
+
+### 🔄 Alternative Discovery
+- Suggests more sustainable product options
+- Comparative sustainability insights
+- Focus on practical, accessible alternatives
+
+---
+
+### 📊 Impact Awareness
+- Visual explanation of environmental impact
+- Simple equivalence-based comparisons
+- Helps users understand how individual choices scale
+
+---
+
+### 🗺️ Recycling & Disposal Guidance
+- Location-based recycling center discovery
+- Category-specific disposal instructions
+- Map-based navigation support
+
+---
+
+### 🎨 User Experience
+- Modern, dark-mode-first interface
+- Smooth animations and micro-interactions
+- Responsive design for mobile and desktop
+- Product-grade UI focus
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+- **React.js**
+- **TypeScript**
+- **Tailwind CSS**
+- Lucide Icons
+
+### Backend
+- **Node.js**
+- **Express.js**
+- RESTful API architecture
+- Secure request handling
+
+### AI Integration
+- **Google Gemini API**
+- Image understanding & sustainability reasoning
+- Custom scoring logic
+
+> Note: Verdix currently does not persist user or product data in a database.  
+> The architecture is intentionally designed to support future database integration.
+
+---
+
+## 🏗️ Project Structure
+
+```
+verdix/
+│
+├── frontend/        # React + Tailwind UI
+├── backend/         # Node.js + Express APIs
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-
-- Node.js (v18+)
+- Node.js
 - npm or yarn
 - Google Gemini API key
 
-### Installation
+### Clone the Repository
+```bash
+git clone https://github.com/immansha/verdix.git
+cd verdix
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/immansha/verdix.git
-   cd verdix
-   ```
+### Frontend
 
-2. Install backend dependencies:
-   ```bash
-   cd backend
-   npm install
-   ```
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-3. Install frontend dependencies:
-   ```bash
-   cd ../frontend
-   npm install
-   ```
+### Backend
 
-4. Set up environment variables:
+```bash
+cd backend
+npm install
+# Create .env file with GEMINI_API_KEY=your_key_here
+npm run dev
+```
 
-   For backend, create `backend/.env`:
-   ```
-   GEMINI_API_KEY=your_api_key_here
-   PORT=5001
-   ```
+---
 
-   For frontend, create `frontend/.env` (optional, defaults to localhost):
-   ```
-   VITE_API_BASE_URL=http://localhost:5001/api
-   ```
+## 🔮 Planned Enhancements
 
-### Running Locally
+* Database integration for user history and analytics
+* Barcode-based product scanning
+* User profiles & sustainability tracking
+* Community challenges and impact visualization
+* Multi-language support
+* Retail and brand integrations
 
-1. Start the backend:
-   ```bash
-   cd backend
-   npm run dev
-   ```
+---
 
-2. Start the frontend:
-   ```bash
-   cd frontend
-   npm run dev
-   ```
+## 🎯 Why Verdix?
 
-3. Open [http://localhost:5173](http://localhost:5173) in your browser.
+Verdix demonstrates:
 
-### Building for Production
+* Full-stack application design
+* AI integration in real-world workflows
+* Clean separation of frontend and backend
+* Product-first engineering mindset
+* Honest, scalable system architecture
 
-1. Build the backend:
-   ```bash
-   cd backend
-   npm run build
-   npm start
-   ```
+---
 
-2. Build the frontend:
-   ```bash
-   cd frontend
-   npm run build
-   ```
+## 👩‍💻 Author
 
-## Deployment
-
-- **Frontend**: Deployed on Vercel
-- **Backend**: Deployed on Render
-
-Update `VITE_API_BASE_URL` in Vercel environment variables to point to the Render backend URL.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
-
-## License
-
-MIT
+**Mansha Kshatriya**
