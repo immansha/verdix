@@ -9,33 +9,6 @@ Verdix is currently built as a **stateless, API-driven full-stack application**,
 
 ---
 
-## 🚩 Problem Statement
-
-Consumers want to choose sustainable products, but:
-- Sustainability labels are inconsistent and hard to interpret
-- Greenwashing makes brand claims unreliable
-- Product lifecycle impact is rarely transparent
-- Disposal and recycling information is unclear
-
-As a result, users lack trustworthy, actionable information at the point of purchase.
-
----
-
-## 💡 Solution
-
-Verdix acts as a **decision-support system** for sustainable consumption.
-
-Users can upload or scan product images, and Verdix:
-- Analyzes packaging and materials using AI
-- Generates a structured sustainability score
-- Explains environmental trade-offs clearly
-- Recommends better alternatives
-- Provides disposal and recycling guidance
-
-The system is designed to work in real time without requiring user accounts.
-
----
-
 ## ✨ Core Features
 
 ### 🔍 AI-Powered Product Analysis
